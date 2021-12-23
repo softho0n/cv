@@ -20,4 +20,12 @@
 4. [`execute`](https://github.com/softho0n/cv/blob/main/02-grapcut.py#L33)
 
 ### Execute
- 
+* `--imgpath`로 이미지 리소스에 대한 경로값을 전달해주어야 함.
+* `cv2.EVENT_LBUTTONDOWN` : Background로 인지한 부분을 다시 Foreground로 업데이트함.
+* `cv2.EVENT_RBUTTONDOWN` : Foreground로 인지한 부분을 다시 Background로 업데이트함.
+```console
+foo@bar:~$ python3 grapcut.py --imgpath="path/to/image"
+```
+
+### Result
+<p align="center"><img width="55%" src="https://user-images.githubusercontent.com/42256738/147172877-e32a9739-48cc-42fd-9773-bb27618164c8.gif"/></p>
